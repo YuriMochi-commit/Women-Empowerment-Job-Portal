@@ -1,0 +1,30 @@
+<!-- <?php
+  if(isset($_POST["submit"])){
+    $first_name = $_POST["firstname"];
+    $last_name = $_POST["lastname"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+    $phone_number = $_POST["phone_number"];
+   $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+    $errors = array();
+    
+    if(empty($first_name) OR empty($last_name) OR empty($email) OR empty($password) OR empty($phone_number)){
+      array_push($errors, "All fileds are requires");
+    }
+    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+      array_push($errors, "Email is not valid");
+    }
+    if(strlen($password)<8){
+      array_push($errors, "Password must be at least 8 character long");
+    }
+    if(count($errors)>0){
+      foreach($errors as $error){
+        echo "<div class='alert alert-danger'>$error</div>";
+      }
+
+    }else{
+
+    }
+
+  }
+  ?> -->
